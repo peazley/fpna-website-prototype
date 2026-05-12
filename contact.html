@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Forest Park Neighborhood Association</title>
+  <meta name="description" content="Contact the FPNA board, press inquiries, and general questions from residents.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="banner-50">
+    <strong>FPNA is 50.</strong> Join us for our anniversary celebration on August 15, 2026.
+    <a href="get-involved.html#rsvp">RSVP →</a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Forest Park Neighbors</span>
+        <span class="brand-tag">Established 1976</span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="meetings.html">Meetings</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="get-involved.html" class="nav-cta">Get Involved</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="section-eyebrow">Contact</div>
+      <h1 class="section-title">Get in touch.</h1>
+      <p class="section-sub">
+        For general questions, committee inquiries, press requests, or anything else
+        you'd like to bring to the association.
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="boundary-block">
+        <div style="background: var(--color-card); border: 1px solid var(--color-border); border-radius: 10px; padding: 32px;">
+          <h3 style="font-family: var(--font-display); font-size: 22px; margin-bottom: 8px;">Send a message</h3>
+          <p class="muted" style="margin-bottom: 24px;">We aim to respond within a few business days.</p>
+          <form onsubmit="event.preventDefault(); alert('In the production version, this sends a message to the FPNA board.');">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" required>
+              </div>
+              <div class="form-group full">
+                <label for="contact-topic">What's this about?</label>
+                <select id="contact-topic">
+                  <option>General question</option>
+                  <option>Membership</option>
+                  <option>Volunteer / committee interest</option>
+                  <option>Press inquiry</option>
+                  <option>50th anniversary celebration</option>
+                  <option>Sponsorship</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" required></textarea>
+              </div>
+            </div>
+            <div style="margin-top: 24px;">
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <h3 style="font-family: var(--font-display); font-size: 22px; margin-bottom: 16px;">Direct contacts</h3>
+          <p style="margin-bottom: 8px;"><strong>General inquiries</strong><br>
+            <a href="mailto:hello@forestparkneighbors.org">hello@forestparkneighbors.org</a></p>
+          <p style="margin-bottom: 8px;"><strong>Board contact</strong><br>
+            <a href="mailto:board@forestparkneighbors.org">board@forestparkneighbors.org</a></p>
+          <p style="margin-bottom: 8px;" id="press"><strong>Press inquiries</strong><br>
+            <a href="mailto:press@forestparkneighbors.org">press@forestparkneighbors.org</a></p>
+          <p style="margin-bottom: 8px;"><strong>50th anniversary</strong><br>
+            <a href="mailto:50th@forestparkneighbors.org">50th@forestparkneighbors.org</a></p>
+
+          <h3 style="font-family: var(--font-display); font-size: 22px; margin: 36px 0 16px;">Mailing address</h3>
+          <p class="muted">
+            Forest Park Neighborhood Association<br>
+            P.O. Box [to be confirmed]<br>
+            Portland, OR 97229
+          </p>
+
+          <h3 style="font-family: var(--font-display); font-size: 22px; margin: 36px 0 16px;">Press kit</h3>
+          <p class="muted" style="margin-bottom: 12px;">For journalists working on stories about the neighborhood, FPNA, or related issues.</p>
+          <a href="#" class="btn btn-secondary">Download press kit (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Forest Park Neighbors</div>
+          <p class="footer-blurb">
+            The neighborhood association for residents living around Portland's Forest Park.
+            A 501(c)(4) nonprofit, organized in 1976.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Association</h4>
+          <ul>
+            <li><a href="about.html">About FPNA</a></li>
+            <li><a href="about.html#board">Board members</a></li>
+            <li><a href="meetings.html">Meetings</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get involved</h4>
+          <ul>
+            <li><a href="get-involved.html">Become a member</a></li>
+            <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+            <li><a href="get-involved.html#rsvp">50th Anniversary RSVP</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:hello@forestparkneighbors.org">hello@forestparkneighbors.org</a></li>
+            <li><a href="contact.html#press">Press inquiries</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 1976–2026 Forest Park Neighborhood Association</span>
+        <span>A 501(c)(4) Oregon nonprofit</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

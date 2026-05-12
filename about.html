@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Forest Park Neighborhood Association</title>
+  <meta name="description" content="FPNA represents residents around Portland's Forest Park. Our mission, our boundaries, our board, and fifty years of neighborhood history.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="banner-50">
+    <strong>FPNA is 50.</strong> Join us for our anniversary celebration on August 15, 2026.
+    <a href="get-involved.html#rsvp">RSVP →</a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Forest Park Neighbors</span>
+        <span class="brand-tag">Established 1976</span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="meetings.html">Meetings</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="get-involved.html" class="nav-cta">Get Involved</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="section-eyebrow">About FPNA</div>
+      <h1 class="section-title">A neighborhood association at the edge of one of America's largest urban forests.</h1>
+      <p class="section-sub">
+        FPNA is a volunteer-run, nonprofit neighborhood association representing residents
+        who live in and around Portland's Forest Park — a broad area covering the
+        neighborhoods, ridgelines, and hillsides that surround one of the largest urban
+        forests in the country.
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="prose">
+        <h2>Mission</h2>
+        <p>
+          For fifty years, FPNA has worked to represent residents on the issues that shape
+          our part of Portland — broadband access, wildfire preparedness, tree management
+          and power reliability, land use, traffic, and environmental stewardship of one of
+          the most ecologically significant urban landscapes in the country.
+        </p>
+        <p>
+          We hold monthly general meetings open to all residents, publish a regular Updates
+          newsletter, and advocate on behalf of the neighborhood with the City of Portland,
+          Multnomah County, and the State of Oregon. Membership is free and open to anyone
+          living within the FPNA boundary.
+        </p>
+
+        <h2>What we do</h2>
+        <ul>
+          <li>Hold monthly general meetings open to all residents</li>
+          <li>Publish a regular Updates newsletter with neighborhood-relevant news</li>
+          <li>Advocate on behalf of residents on infrastructure, safety, and land use issues</li>
+          <li>Connect neighbors with one another and with adjacent partner organizations</li>
+          <li>Coordinate community responses to issues affecting multiple households</li>
+          <li>Steward the relationship between residents and Forest Park itself</li>
+        </ul>
+
+        <h2>What we are not</h2>
+        <p>
+          FPNA is not a homeowners' association. Membership is voluntary, there are no
+          dues, no covenants, no design review, and no authority over private property.
+          We are an organized voice for residents, not a regulatory body.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="boundary" style="background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="section-eyebrow">Boundary</div>
+      <h2 class="section-title">Where the neighborhood begins and ends.</h2>
+      <p class="section-sub">
+        The FPNA boundary follows the residential edge of Forest Park itself, plus the
+        surrounding ridge and valley communities. The exact boundary spans a mix of
+        jurisdictions — many residents are in unincorporated Multnomah County, others
+        are within the City of Portland — and it's erratic in places, a reflection of
+        how this corner of the city actually developed. (Interactive boundary lookup
+        coming in a later phase.)
+      </p>
+
+      <div class="boundary-block">
+        <div class="map-placeholder">
+          <svg class="map-bg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <pattern id="topo2" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+                <circle cx="30" cy="30" r="22" stroke="#C9BEA8" stroke-width="0.5" fill="none"/>
+                <circle cx="30" cy="30" r="14" stroke="#C9BEA8" stroke-width="0.5" fill="none"/>
+                <circle cx="30" cy="30" r="6" stroke="#C9BEA8" stroke-width="0.5" fill="none"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="300" fill="url(#topo2)"/>
+            <path d="M40 260 Q90 200 130 220 Q180 240 220 200 Q260 160 310 180 Q350 200 380 170"
+                  stroke="#2D5A3D" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.6"/>
+            <path d="M60 100 Q100 130 140 110 Q180 90 220 120 Q260 140 300 110 Q340 80 380 100"
+                  stroke="#2D5A3D" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.6"/>
+          </svg>
+          <div class="map-pin" aria-hidden="true"></div>
+          <div class="map-label">Boundary map — interactive version coming soon</div>
+        </div>
+
+        <div class="checker-card">
+          <h3>Check your address</h3>
+          <p>Enter your address to find out whether you're inside the FPNA boundary, and whether your home is in the City of Portland or unincorporated Multnomah County.</p>
+          <form class="checker-form" onsubmit="event.preventDefault(); alert('In the production version, this will return live boundary and jurisdiction info.');">
+            <input type="text" placeholder="Street address, Portland" aria-label="Your address">
+            <button type="submit">Check</button>
+          </form>
+          <p class="checker-note">Live boundary lookup, plus city/county jurisdiction. Built on official Multnomah County and City of Portland records.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="history">
+    <div class="container">
+      <div class="section-eyebrow">Fifty years</div>
+      <h2 class="section-title">A short history of the association.</h2>
+      <p class="section-sub">
+        FPNA was organized in 1976 by a small group of residents concerned about the
+        future of the neighborhood. Fifty years later, much has changed — but the work
+        has stayed the same.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">1976</div>
+          <div class="timeline-title">Association founded</div>
+          <div class="timeline-desc">A group of residents organizes formally to represent the area in conversations with the City of Portland and Multnomah County.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">1989</div>
+          <div class="timeline-title">Forest Park boundaries expanded</div>
+          <div class="timeline-desc">FPNA advocates alongside other groups for the expansion of Forest Park itself, contributing to one of the most significant urban conservation efforts of the era.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2001</div>
+          <div class="timeline-title">25th anniversary</div>
+          <div class="timeline-desc">The association marks 25 years with a community gathering and the first published history of the neighborhood.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2016</div>
+          <div class="timeline-title">40th anniversary &amp; partnership expansion</div>
+          <div class="timeline-desc">FPNA deepens its partnerships with Forest Park Conservancy, Skyline Ridge Neighbors, and the City of Portland Office of Community Technology.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2024</div>
+          <div class="timeline-title">Broadband advocacy begins</div>
+          <div class="timeline-desc">Residents organize around documented gaps in federal broadband programs, surfacing the issue with state and federal officials.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-title">Fifty years</div>
+          <div class="timeline-desc">FPNA marks half a century of community organizing. Anniversary celebration on August 15, 2026.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="board" style="background: var(--color-bg-alt); border-top: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="section-eyebrow">The board</div>
+      <h2 class="section-title">The volunteers who keep the association running.</h2>
+      <p class="section-sub">
+        FPNA's board is elected annually by the membership at the spring general meeting.
+        Board members serve one-year terms with no limits on re-election.
+      </p>
+
+      <div class="board-grid">
+        <div class="board-card">
+          <div class="name">[Name]</div>
+          <div class="role">President</div>
+          <div class="since">Board member since [year]</div>
+        </div>
+        <div class="board-card">
+          <div class="name">[Name]</div>
+          <div class="role">Vice President</div>
+          <div class="since">Board member since [year]</div>
+        </div>
+        <div class="board-card">
+          <div class="name">[Name]</div>
+          <div class="role">Secretary</div>
+          <div class="since">Board member since [year]</div>
+        </div>
+        <div class="board-card">
+          <div class="name">[Name]</div>
+          <div class="role">Treasurer</div>
+          <div class="since">Board member since [year]</div>
+        </div>
+        <div class="board-card">
+          <div class="name">[Name]</div>
+          <div class="role">At-large member</div>
+          <div class="since">Board member since [year]</div>
+        </div>
+        <div class="board-card">
+          <div class="name">[Name]</div>
+          <div class="role">At-large member</div>
+          <div class="since">Board member since [year]</div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top: 28px; font-size: 14px;">
+        Names will be filled in with current board roster.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Forest Park Neighbors</div>
+          <p class="footer-blurb">
+            The neighborhood association for residents living around Portland's Forest Park.
+            A 501(c)(4) nonprofit, organized in 1976.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Association</h4>
+          <ul>
+            <li><a href="about.html">About FPNA</a></li>
+            <li><a href="about.html#board">Board members</a></li>
+            <li><a href="meetings.html">Meetings</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get involved</h4>
+          <ul>
+            <li><a href="get-involved.html">Become a member</a></li>
+            <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+            <li><a href="get-involved.html#rsvp">50th Anniversary RSVP</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:hello@forestparkneighbors.org">hello@forestparkneighbors.org</a></li>
+            <li><a href="contact.html#press">Press inquiries</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 1976–2026 Forest Park Neighborhood Association</span>
+        <span>A 501(c)(4) Oregon nonprofit</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

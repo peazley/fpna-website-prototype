@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved — Forest Park Neighborhood Association</title>
+  <meta name="description" content="Become a member of FPNA, volunteer with a committee, donate, or RSVP for the 50th anniversary celebration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="banner-50">
+    <strong>FPNA is 50.</strong> Join us for our anniversary celebration on August 15, 2026.
+    <a href="#rsvp">RSVP →</a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Forest Park Neighbors</span>
+        <span class="brand-tag">Established 1976</span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="meetings.html">Meetings</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="get-involved.html" class="nav-cta active">Get Involved</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="section-eyebrow">Get Involved</div>
+      <h1 class="section-title">Be part of the neighborhood association.</h1>
+      <p class="section-sub">
+        Membership is free. You'll receive the Updates newsletter, meeting invitations, and
+        a voice in the work the association does on behalf of residents.
+      </p>
+    </div>
+  </div>
+
+  <!-- Membership signup -->
+  <section id="member">
+    <div class="container">
+      <div class="boundary-block">
+        <div class="prose">
+          <h2 style="margin-top:0;">Become a member</h2>
+          <p>
+            FPNA membership is open to any resident living within the FPNA boundary, free
+            of charge. Members receive:
+          </p>
+          <ul>
+            <li>The monthly Updates newsletter</li>
+            <li>Invitations to general meetings and special events</li>
+            <li>Voting rights at the annual membership meeting</li>
+            <li>The ability to join committees and working groups</li>
+            <li>Direct line to the board on issues affecting residents</li>
+          </ul>
+          <p>
+            Not sure if you're in the boundary?
+            <a href="about.html#boundary">Check your address on the about page</a>.
+          </p>
+        </div>
+
+        <div class="checker-card">
+          <h3>Sign up</h3>
+          <p>Takes about a minute. You'll get a confirmation email.</p>
+          <form onsubmit="event.preventDefault(); alert('In the production version, this adds you to the FPNA member list.');">
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label for="name">Name</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 18px;">
+              <label for="address">Address</label>
+              <input type="text" id="address" placeholder="Street address, Portland" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Become a member</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer -->
+  <section id="volunteer" style="background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="section-eyebrow">Volunteer</div>
+      <h2 class="section-title">Ways to plug in.</h2>
+      <p class="section-sub">
+        FPNA's work is done by volunteer committees. Each committee has its own focus
+        area and meets independently between general meetings.
+      </p>
+
+      <div class="resource-grid">
+        <div class="resource-card">
+          <h3>Broadband &amp; Infrastructure</h3>
+          <p>Working on broadband access, internet equity, and infrastructure issues affecting unserved households in the neighborhood.</p>
+          <a href="contact.html">Get in touch →</a>
+        </div>
+        <div class="resource-card">
+          <h3>Wildfire &amp; Emergency Preparedness</h3>
+          <p>Coordinating defensible-space education, evacuation planning, and partnership with PF&amp;R on neighborhood fire readiness.</p>
+          <a href="contact.html">Get in touch →</a>
+        </div>
+        <div class="resource-card">
+          <h3>Forest Park Stewardship</h3>
+          <p>Liaison between FPNA and the Forest Park Conservancy, the City Parks bureau, and trail volunteer programs.</p>
+          <a href="contact.html">Get in touch →</a>
+        </div>
+        <div class="resource-card">
+          <h3>Power &amp; Tree Management</h3>
+          <p>Working with PGE on tree-trimming and outage reduction, building on years of advocacy that's reduced power issues for residents.</p>
+          <a href="contact.html">Get in touch →</a>
+        </div>
+        <div class="resource-card">
+          <h3>Land Use &amp; Planning</h3>
+          <p>Reviewing development proposals affecting the neighborhood and engaging with the city and county on land use decisions.</p>
+          <a href="contact.html">Get in touch →</a>
+        </div>
+        <div class="resource-card">
+          <h3>Communications</h3>
+          <p>Writing the Updates newsletter, managing the website, and helping residents stay informed about what's happening.</p>
+          <a href="contact.html">Get in touch →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 50th Anniversary RSVP -->
+  <section id="rsvp">
+    <div class="container">
+      <div class="section-eyebrow">50th Anniversary</div>
+      <h2 class="section-title">RSVP for the August 15 celebration.</h2>
+      <p class="section-sub">
+        Join us as we mark fifty years of FPNA. Food, music, neighborhood history, and a
+        chance to meet the residents who've built this place. Free and open to all FPNA
+        residents, with sponsor opportunities for local businesses and organizations.
+      </p>
+
+      <div style="background: var(--color-card); border: 1px solid var(--color-border); border-radius: 10px; padding: 40px;">
+        <form onsubmit="event.preventDefault(); alert('In the production version, this submits your RSVP to the 50th anniversary party.');">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="rsvp-name">Your name</label>
+              <input type="text" id="rsvp-name" required>
+            </div>
+            <div class="form-group">
+              <label for="rsvp-email">Email</label>
+              <input type="email" id="rsvp-email" required>
+            </div>
+            <div class="form-group">
+              <label for="rsvp-guests">Number attending (including you)</label>
+              <select id="rsvp-guests">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 or more</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="rsvp-resident">Years in the neighborhood</label>
+              <select id="rsvp-resident">
+                <option>Less than 5 years</option>
+                <option>5–10 years</option>
+                <option>10–25 years</option>
+                <option>25–50 years</option>
+                <option>Since the very beginning</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="rsvp-dietary">Dietary requirements or accessibility needs (optional)</label>
+              <input type="text" id="rsvp-dietary">
+            </div>
+            <div class="form-group full">
+              <label for="rsvp-memory">A favorite Forest Park memory you'd like to share (optional)</label>
+              <textarea id="rsvp-memory" placeholder="We're collecting neighborhood stories for the 50th anniversary archive — share one if you'd like."></textarea>
+            </div>
+          </div>
+          <div style="margin-top: 24px;">
+            <button type="submit" class="btn btn-primary">Submit RSVP</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsor -->
+  <section style="background: var(--color-bg-alt); border-top: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="section-eyebrow">Sponsor the 50th</div>
+      <h2 class="section-title">Local businesses and organizations: support the celebration.</h2>
+      <p class="section-sub">
+        Sponsor tiers help FPNA cover the cost of the anniversary celebration and the
+        publication of a 50-year neighborhood history. All sponsor contributions are
+        tax-deductible.
+      </p>
+
+      <div class="resource-grid">
+        <div class="resource-card">
+          <h3>Cedar — $250</h3>
+          <p>Recognition on the FPNA website and in the anniversary program. Two reserved seats at the celebration.</p>
+        </div>
+        <div class="resource-card">
+          <h3>Maple — $500</h3>
+          <p>All Cedar benefits, plus a half-page acknowledgment in the printed program and recognition during the anniversary remarks.</p>
+        </div>
+        <div class="resource-card">
+          <h3>Douglas Fir — $1,000+</h3>
+          <p>All Maple benefits, plus a full-page acknowledgment, prominent recognition during the event, and standing as a Founding Sponsor of the FPNA history project.</p>
+        </div>
+      </div>
+      <p style="margin-top: 24px;">
+        <a href="contact.html" class="btn btn-secondary">Inquire about sponsorship</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Forest Park Neighbors</div>
+          <p class="footer-blurb">
+            The neighborhood association for residents living around Portland's Forest Park.
+            A 501(c)(4) nonprofit, organized in 1976.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Association</h4>
+          <ul>
+            <li><a href="about.html">About FPNA</a></li>
+            <li><a href="about.html#board">Board members</a></li>
+            <li><a href="meetings.html">Meetings</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get involved</h4>
+          <ul>
+            <li><a href="get-involved.html">Become a member</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#rsvp">50th Anniversary RSVP</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:hello@forestparkneighbors.org">hello@forestparkneighbors.org</a></li>
+            <li><a href="contact.html#press">Press inquiries</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 1976–2026 Forest Park Neighborhood Association</span>
+        <span>A 501(c)(4) Oregon nonprofit</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
