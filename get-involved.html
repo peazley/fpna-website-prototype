@@ -7,7 +7,7 @@
   <meta name="description" content="Become a member of FPNA, volunteer with a committee, donate, or RSVP for the 50th anniversary celebration.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,8 +20,11 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-name">Forest Park Neighbors</span>
-        <span class="brand-tag">Established 1976</span>
+        <img src="assets/fpna-logo-bw.png" alt="" class="brand-mark" />
+        <span class="brand-text">
+          <span class="brand-name">Forest Park Neighbors</span>
+          <span class="brand-tag">Established 1976</span>
+        </span>
       </a>
       <nav class="main-nav" aria-label="Main">
         <ul>
@@ -70,24 +73,25 @@
 
         <div class="checker-card">
           <h3>Sign up</h3>
-          <p>Takes about a minute. You'll get a confirmation email.</p>
-          <form onsubmit="event.preventDefault(); alert('In the production version, this adds you to the FPNA member list.');">
-            <div class="form-group" style="margin-bottom: 14px;">
-              <label for="name">Name</label>
-              <input type="text" id="name" required>
-            </div>
-            <div class="form-group" style="margin-bottom: 14px;">
-              <label for="email">Email</label>
-              <input type="email" id="email" required>
-            </div>
-            <div class="form-group" style="margin-bottom: 18px;">
-              <label for="address">Address</label>
-              <input type="text" id="address" placeholder="Street address, Portland" required>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Become a member</button>
-          </form>
+          <p>FPNA's official membership signup is hosted on AirTable through District Four Coalition. It takes about a minute.</p>
+          <p style="margin-top: 20px;">
+            <a href="https://airtable.com/shroPHr8EleFFeM4T" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">Become a member →</a>
+          </p>
+          <p class="checker-note">You can also email <a href="mailto:president@forestparkneighbors.org">president@forestparkneighbors.org</a> to be added to the mailing list.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Pull quote interlude -->
+  <section style="padding: 56px 0;">
+    <div class="container" style="max-width: 760px;">
+      <blockquote style="font-family: var(--font-display); font-weight: 300; font-size: clamp(22px, 2.4vw, 30px); line-height: 1.35; letter-spacing: -0.005em; color: var(--color-bark); border: 0; padding: 0; margin: 0;">
+        "Only minutes from a major metropolis, Forest Park continually reminds us of our coexistence with the natural world, and at the same time saves for generations to come a valuable part of Oregon's heritage."
+      </blockquote>
+      <p style="font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-cedar); margin-top: 18px;">
+        — Marcy Cottrell Houle
+      </p>
     </div>
   </section>
 
@@ -102,11 +106,6 @@
       </p>
 
       <div class="resource-grid">
-        <div class="resource-card">
-          <h3>Broadband &amp; Infrastructure</h3>
-          <p>Working on broadband access, internet equity, and infrastructure issues affecting unserved households in the neighborhood.</p>
-          <a href="contact.html">Get in touch →</a>
-        </div>
         <div class="resource-card">
           <h3>Wildfire &amp; Emergency Preparedness</h3>
           <p>Coordinating defensible-space education, evacuation planning, and partnership with PF&amp;R on neighborhood fire readiness.</p>

@@ -1,19 +1,41 @@
-/* FPNA Demo — design system */
+/* FPNA Demo — design system
+ * Built to the FPNA Brand Kit (v1.0, May 2026).
+ * Palette: Douglas Fir / Cream / Cedar / Bark, plus Jay / Salmonberry / Moss / Late Light.
+ * Type: Source Serif 4 (editorial) + Public Sans (UI) + JetBrains Mono (labels).
+ */
 
 :root {
-  --color-bg: #FAF7F2;
-  --color-bg-alt: #F2EDE3;
-  --color-text: #1A2B1F;
-  --color-text-muted: #4A5650;
-  --color-accent: #2D5A3D;
-  --color-accent-hover: #1F4029;
-  --color-accent-soft: rgba(45, 90, 61, 0.08);
-  --color-border: #E2D9C7;
-  --color-border-strong: #C9BEA8;
+  /* Brand kit palette */
+  --color-forest: #1F3D2B;        /* primary */
+  --color-forest-deep: #122418;
+  --color-moss: #6F8A4F;
+  --color-cedar: #6B4A2B;
+  --color-cedar-light: #A98463;
+  --color-jay: #1B4D7A;
+  --color-rust: #B6502E;          /* salmonberry */
+  --color-gold: #C89A3A;          /* late light */
+  --color-cream: #F4EDDD;
+  --color-paper: #FAF7F2;         /* page background — softer warm white */
+  --color-paper-2: #F2EDE3;       /* alt section background */
+  --color-bark: #1A1410;          /* text ink */
+  --color-rule: rgba(26, 20, 16, 0.18);
+
+  /* Semantic aliases */
+  --color-bg: var(--color-paper);
+  --color-bg-alt: var(--color-paper-2);
+  --color-text: var(--color-bark);
+  --color-text-muted: #322c25;
+  --color-accent: var(--color-forest);
+  --color-accent-hover: var(--color-forest-deep);
+  --color-accent-soft: rgba(31, 61, 43, 0.08);
+  --color-border: #C9BEA8;
+  --color-border-strong: #A89C82;
   --color-card: #FFFFFF;
 
-  --font-display: 'Fraunces', 'Iowan Old Style', 'Georgia', serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Typography */
+  --font-display: 'Source Serif 4', 'Iowan Old Style', 'Georgia', serif;
+  --font-body: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
   --max-width: 1100px;
   --container-padding: 24px;
@@ -69,23 +91,35 @@ img { max-width: 100%; display: block; }
 }
 .brand {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
   color: var(--color-text);
 }
 .brand:hover { text-decoration: none; }
+.brand-mark {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 .brand-name {
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 22px;
-  letter-spacing: -0.01em;
-  line-height: 1;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.005em;
+  line-height: 1.05;
 }
 .brand-tag {
-  font-size: 11px;
-  letter-spacing: 0.12em;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
+  color: var(--color-cedar);
 }
 nav.main-nav ul {
   list-style: none;
@@ -132,23 +166,25 @@ section { padding: 80px 0; }
 }
 .hero-inner { position: relative; z-index: 1; }
 .hero-eyebrow {
-  font-size: 13px;
-  letter-spacing: 0.14em;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-cedar);
   font-weight: 500;
   margin-bottom: 24px;
 }
 .hero-title {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(40px, 6vw, 72px);
-  line-height: 1.05;
+  font-size: clamp(48px, 7vw, 84px);
+  line-height: 1.0;
   letter-spacing: -0.025em;
-  color: var(--color-text);
+  color: var(--color-bark);
   margin-bottom: 28px;
   max-width: 18ch;
 }
+.hero-title em { font-style: italic; color: var(--color-forest); font-weight: 600; }
 .hero-sub {
   font-size: 20px;
   line-height: 1.55;
@@ -192,18 +228,19 @@ section { padding: 80px 0; }
 
 /* Sections */
 .section-eyebrow {
-  font-size: 13px;
-  letter-spacing: 0.14em;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-cedar);
   font-weight: 500;
   margin-bottom: 14px;
 }
 .section-title {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(30px, 4vw, 44px);
-  line-height: 1.1;
+  font-size: clamp(32px, 4.5vw, 52px);
+  line-height: 1.05;
   letter-spacing: -0.02em;
   margin-bottom: 18px;
   max-width: 22ch;
@@ -285,21 +322,22 @@ section { padding: 80px 0; }
 }
 .news-card:hover { border-color: var(--color-accent); text-decoration: none; transform: translateY(-2px); }
 .news-meta {
-  font-size: 13px;
-  letter-spacing: 0.08em;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-cedar);
   font-weight: 500;
   margin-bottom: 12px;
 }
 .news-title {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 22px;
   letter-spacing: -0.01em;
   line-height: 1.25;
   margin-bottom: 12px;
-  color: var(--color-text);
+  color: var(--color-bark);
 }
 .news-excerpt { color: var(--color-text-muted); font-size: 15px; margin-bottom: 20px; flex: 1; }
 .news-read { font-size: 14px; color: var(--color-accent); font-weight: 500; }
@@ -500,16 +538,17 @@ section { padding: 80px 0; }
 }
 .board-card .name {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   letter-spacing: -0.01em;
   margin-bottom: 6px;
 }
 .board-card .role {
-  font-size: 12px;
-  letter-spacing: 0.08em;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-cedar);
   margin-bottom: 12px;
   font-weight: 500;
 }

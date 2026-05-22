@@ -7,7 +7,7 @@
   <meta name="description" content="FPNA represents residents around Portland's Forest Park. Our mission, our boundaries, our board, and fifty years of neighborhood history.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,8 +20,11 @@
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
-        <span class="brand-name">Forest Park Neighbors</span>
-        <span class="brand-tag">Established 1976</span>
+        <img src="assets/fpna-logo-bw.png" alt="" class="brand-mark" />
+        <span class="brand-text">
+          <span class="brand-name">Forest Park Neighbors</span>
+          <span class="brand-tag">Established 1976</span>
+        </span>
       </a>
       <nav class="main-nav" aria-label="Main">
         <ul>
@@ -39,10 +42,10 @@
       <div class="section-eyebrow">About FPNA</div>
       <h1 class="section-title">A neighborhood association at the edge of one of America's largest urban forests.</h1>
       <p class="section-sub">
-        FPNA is a volunteer-run, nonprofit neighborhood association representing residents
-        who live in and around Portland's Forest Park — a broad area covering the
-        neighborhoods, ridgelines, and hillsides that surround one of the largest urban
-        forests in the country.
+        FPNA is one of the City of Portland's 94 neighborhood associations. We represent
+        residents from W. Burnside north to Cornelius Pass and Newberry Roads, and west
+        to the Washington County line — a unique stretch of city that runs through both
+        incorporated Portland and unincorporated Multnomah County.
       </p>
     </div>
   </div>
@@ -52,26 +55,33 @@
       <div class="prose">
         <h2>Mission</h2>
         <p>
-          For fifty years, FPNA has worked to represent residents on the issues that shape
-          our part of Portland — broadband access, wildfire preparedness, tree management
-          and power reliability, land use, traffic, and environmental stewardship of one of
-          the most ecologically significant urban landscapes in the country.
+          FPNA provides a forum for neighbors to discuss diverse issues — from traffic to
+          wildlife, land-use plans to noxious weed removal, park protection to fire safety.
+          We advocate for effective governance, safety, livability, and protection of the
+          rural and wild nature of the neighborhood.
         </p>
         <p>
-          We hold monthly general meetings open to all residents, publish a regular Updates
-          newsletter, and advocate on behalf of the neighborhood with the City of Portland,
-          Multnomah County, and the State of Oregon. Membership is free and open to anyone
-          living within the FPNA boundary.
+          We are part of a wildlife corridor that connects into Oregon's Coast Range,
+          supporting the biodiversity and wildness of Forest Park. A neighborhood survey
+          showed our residents overwhelmingly value our regionally important wildlife
+          habitat and headwater streams. We have worked to protect the valuable natural
+          resources in and around Forest Park since our founding in 1976.
+        </p>
+        <p>
+          The Portland metropolitan area is growing, which means increased pressure for
+          development as well as all the factors that accompany a burgeoning population.
+          FPNA automatically receives land use notices about development within its
+          boundaries and can appeal decisions at the city level without charge.
         </p>
 
-        <h2>What we do</h2>
+        <h2>Some of our past accomplishments</h2>
         <ul>
-          <li>Hold monthly general meetings open to all residents</li>
-          <li>Publish a regular Updates newsletter with neighborhood-relevant news</li>
-          <li>Advocate on behalf of residents on infrastructure, safety, and land use issues</li>
-          <li>Connect neighbors with one another and with adjacent partner organizations</li>
-          <li>Coordinate community responses to issues affecting multiple households</li>
-          <li>Steward the relationship between residents and Forest Park itself</li>
+          <li>Urban and Rural Reserves process — helping to determine areas suitable for growth and areas needed to maintain viability of agriculture and forest industries or protect natural landscape features</li>
+          <li>Forest Park Mountain Biking Trail Committee — advocating for Forest Park's natural resources</li>
+          <li>Cornell Road Sustainability Coalition — addressing Cornell Road traffic issues</li>
+          <li>Annual SOLVE clean-up — cleaning up road debris on neighborhood roads and in the park</li>
+          <li>Eradication of noxious weeds — garlic mustard, ivy, holly</li>
+          <li>Winter and summer gatherings for neighborhood residents</li>
         </ul>
 
         <h2>What we are not</h2>
@@ -84,17 +94,15 @@
     </div>
   </section>
 
-  <section id="boundary" style="background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+  <section style="background: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
     <div class="container">
       <div class="section-eyebrow">Boundary</div>
       <h2 class="section-title">Where the neighborhood begins and ends.</h2>
       <p class="section-sub">
         The FPNA boundary follows the residential edge of Forest Park itself, plus the
-        surrounding ridge and valley communities. The exact boundary spans a mix of
-        jurisdictions — many residents are in unincorporated Multnomah County, others
-        are within the City of Portland — and it's erratic in places, a reflection of
-        how this corner of the city actually developed. (Interactive boundary lookup
-        coming in a later phase.)
+        surrounding ridge and valley communities. Many residents are in unincorporated
+        Multnomah County; others are within the City of Portland. The boundary is erratic
+        in places — a reflection of how this corner of the city actually developed.
       </p>
 
       <div class="boundary-block">
@@ -109,9 +117,9 @@
             </defs>
             <rect width="400" height="300" fill="url(#topo2)"/>
             <path d="M40 260 Q90 200 130 220 Q180 240 220 200 Q260 160 310 180 Q350 200 380 170"
-                  stroke="#2D5A3D" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.6"/>
+                  stroke="#1F3D2B" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.6"/>
             <path d="M60 100 Q100 130 140 110 Q180 90 220 120 Q260 140 300 110 Q340 80 380 100"
-                  stroke="#2D5A3D" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.6"/>
+                  stroke="#1F3D2B" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.6"/>
           </svg>
           <div class="map-pin" aria-hidden="true"></div>
           <div class="map-label">Boundary map — interactive version coming soon</div>
@@ -121,7 +129,7 @@
           <h3>Check your address</h3>
           <p>Enter your address to find out whether you're inside the FPNA boundary, and whether your home is in the City of Portland or unincorporated Multnomah County.</p>
           <form class="checker-form" onsubmit="event.preventDefault(); alert('In the production version, this will return live boundary and jurisdiction info.');">
-            <input type="text" placeholder="Street address, Portland" aria-label="Your address">
+            <input type="text" placeholder="123 NW Thompson Rd, Portland" aria-label="Your address">
             <button type="submit">Check</button>
           </form>
           <p class="checker-note">Live boundary lookup, plus city/county jurisdiction. Built on official Multnomah County and City of Portland records.</p>
@@ -186,39 +194,60 @@
 
       <div class="board-grid">
         <div class="board-card">
-          <div class="name">[Name]</div>
+          <div class="name">Pat Bowman</div>
           <div class="role">President</div>
-          <div class="since">Board member since [year]</div>
         </div>
         <div class="board-card">
-          <div class="name">[Name]</div>
+          <div class="name">Jennifer Jako</div>
           <div class="role">Vice President</div>
-          <div class="since">Board member since [year]</div>
         </div>
         <div class="board-card">
-          <div class="name">[Name]</div>
+          <div class="name">Carol Chesarek</div>
           <div class="role">Secretary</div>
-          <div class="since">Board member since [year]</div>
         </div>
         <div class="board-card">
-          <div class="name">[Name]</div>
+          <div class="name">Richard Kolbell</div>
           <div class="role">Treasurer</div>
-          <div class="since">Board member since [year]</div>
         </div>
         <div class="board-card">
-          <div class="name">[Name]</div>
-          <div class="role">At-large member</div>
-          <div class="since">Board member since [year]</div>
+          <div class="name">Dana Rosenlund</div>
+          <div class="role">Board member</div>
         </div>
         <div class="board-card">
-          <div class="name">[Name]</div>
-          <div class="role">At-large member</div>
-          <div class="since">Board member since [year]</div>
+          <div class="name">Jim Emerson</div>
+          <div class="role">Board member</div>
+        </div>
+        <div class="board-card">
+          <div class="name">Michael Cordisco</div>
+          <div class="role">Board member</div>
+        </div>
+        <div class="board-card">
+          <div class="name">Veronica Dullack</div>
+          <div class="role">Board member</div>
+        </div>
+        <div class="board-card">
+          <div class="name">Bettina Davis</div>
+          <div class="role">Board member</div>
+        </div>
+        <div class="board-card">
+          <div class="name">Paula Sauvageau</div>
+          <div class="role">Board member</div>
         </div>
       </div>
-      <p class="muted" style="margin-top: 28px; font-size: 14px;">
-        Names will be filled in with current board roster.
-      </p>
+      <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--color-border); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-cedar); margin-bottom: 4px;">President</div>
+          <a href="mailto:president@forestparkneighbors.org">president@forestparkneighbors.org</a>
+        </div>
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-cedar); margin-bottom: 4px;">Board</div>
+          <a href="mailto:board@forestparkneighbors.org">board@forestparkneighbors.org</a>
+        </div>
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-cedar); margin-bottom: 4px;">Land Use Committee</div>
+          <a href="mailto:landuse@forestparkneighbors.org">landuse@forestparkneighbors.org</a>
+        </div>
+      </div>
     </div>
   </section>
 
